@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ownio — Privacy Policy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <svg class="mark" viewBox="0 0 1024 1024" role="img" aria-label="Ownio">
+    <g fill="none" stroke="#F7F5F1" stroke-width="58" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M 196 456 L 512 220 L 828 456"/>
+      <path d="M 292 496 L 292 780 L 732 780 L 732 496"/>
+    </g>
+    <g fill="#F7F5F1">
+      <rect x="378" y="509" width="268" height="44" rx="22"/>
+      <rect x="378" y="587" width="268" height="44" rx="22"/>
+    </g>
+    <rect x="378" y="665" width="164" height="44" rx="22" fill="#E8A33D"/>
+  </svg>
+  <nav><a href="index.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+
+  <h1>Privacy Policy</h1>
+  <p class="sub">Ownio · last updated 20 August 2026</p>
+
+  <p>Ownio is a record of what you own, kept for the day you have to prove it.
+  That record is unusually personal — it is a list of your possessions and what
+  they are worth — so this page says exactly where every part of it lives and
+  what, specifically, ever leaves your phone.</p>
+
+  <div class="card rule">
+    <p><strong>There is no account.</strong> Ownio never asks for your name,
+    e-mail address, phone number or a password, and has no way to learn them.
+    Nothing you document is tied to an identity, because there is no identity to
+    tie it to.</p>
+  </div>
+
+  <h2>What stays on your phone</h2>
+  <p>All of it, by default. Your inventory lives in a database in the app's own
+  storage and the photographs live as files beside it. Neither is uploaded,
+  backed up to a server of ours, or readable by us.</p>
+  <ul>
+    <li>Every room, item, value, quantity, condition, note and serial number.</li>
+    <li>Every photograph you take or import.</li>
+    <li>The property address and policy number, if you enter them for the report.
+      These are used only to print them on the PDF you create, and are never
+      transmitted anywhere.</li>
+    <li>Your currency, home type and the personal-property limit you type into
+      the coverage check.</li>
+  </ul>
+  <p>Deleting the app deletes all of it. There is no cloud copy to fall back on,
+  which is the trade Ownio makes deliberately.</p>
+
+  <h2>What leaves your phone, and when</h2>
+  <p>Four things, each for one purpose.</p>
+
+  <table>
+    <tr><th>What</th><th>When</th><th>Why</th></tr>
+    <tr>
+      <td><strong>The photograph you are scanning</strong>, compressed and
+      reduced in size (up to four at once in burst mode), together with your
+      chosen currency code and the two-letter country of your device's language
+      setting.</td>
+      <td>Only at the moment you tap to identify an item.</td>
+      <td>So the item can be recognised and valued for your market. The photo is
+      held only for the length of that request and is not stored on our
+      server.</td>
+    </tr>
+    <tr>
+      <td><strong>A device attestation</strong> from Apple's App Attest or
+      Google's Play Integrity.</td>
+      <td>The first scan, and occasionally afterwards.</td>
+      <td>To prove the request comes from a genuine, unmodified copy of Ownio
+      rather than from someone who found our address. It identifies the app, not
+      you.</td>
+    </tr>
+    <tr>
+      <td><strong>An anonymous installation identifier.</strong> On iOS a random
+      value created on your device; on Android a value derived from the Android
+      ID by one-way hashing, so the original never leaves the phone.</td>
+      <td>Alongside the attestation.</td>
+      <td>To count your scans against the fair-use limit and to remember that
+      you are a subscriber across app updates. It is a random string, not a name,
+      and cannot be traced back to you.</td>
+    </tr>
+    <tr>
+      <td><strong>Your subscription receipt</strong> from the App Store or Google
+      Play.</td>
+      <td>Alongside the attestation, if you subscribe.</td>
+      <td>So the subscription can be verified with Apple or Google directly.
+      Ownio never simply trusts the app's word that you have paid.</td>
+    </tr>
+  </table>
+
+  <h2>Who processes a scanned photograph</h2>
+  <p>Ownio's own server passes the photograph to an AI provider to be
+  identified — Anthropic, or OpenAI if Anthropic is unreachable — and returns
+  the result to your phone. The photograph is not kept by our server. These
+  providers process it to answer the request under their own commercial terms;
+  we do not permit its use to train models. If you would rather no photograph
+  ever be sent, add items by hand: the pencil button beside the camera opens the
+  same form, and nothing about a hand-entered item leaves the phone.</p>
+
+  <h2>What we keep on our server</h2>
+  <p>Counters, and nothing else. How many scans an installation has made this day
+  and this month, and whether its subscription checked out — stored against the
+  anonymous identifier above, on a short expiry. No photographs, no item names,
+  no values, no inventory, and no request content of any kind is written to
+  storage or to our logs.</p>
+
+  <h2>What Ownio does not do</h2>
+  <ul>
+    <li>No advertising, and no advertising SDK.</li>
+    <li>No analytics or attribution SDK. Ownio does not measure how you use it.</li>
+    <li>No tracking across apps or websites, and no App Tracking Transparency
+      prompt, because there is nothing to ask for.</li>
+    <li>No location permission of any kind. The country used for pricing comes
+      from your language setting, not from where you are.</li>
+    <li>No access to contacts, calendar, microphone, or your photo library
+      beyond the individual images you choose to import.</li>
+    <li>No selling or sharing of personal information. There is nothing to sell.</li>
+  </ul>
+
+  <h2>Permissions the app asks for</h2>
+  <ul>
+    <li><strong>Camera</strong> — to photograph the items you are documenting.
+      Photographs are written to the app's own storage, not to your camera roll.</li>
+    <li><strong>Photo library</strong> — only when you choose to import an image
+      you already have. Ownio sees the images you pick and nothing else.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Ownio is not directed at children and does not knowingly collect anything
+  from them. It has no account, no profile and no social features.</p>
+
+  <h2>Your rights</h2>
+  <p>Because Ownio holds no account and stores your inventory only on your own
+  device, you exercise every right yourself and immediately: <strong>Settings →
+  Delete everything</strong> removes the entire inventory and all photographs
+  from the device. To have the anonymous counters attached to your installation
+  cleared as well, write to the address below with the request; we can delete
+  them, though they expire on their own within about a month.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes in a way that affects what leaves your phone, the
+  updated date at the top will change and the new version will be published here
+  before the change ships.</p>
+
+  <div class="card">
+    <p><strong>Questions about any of this?</strong><br>
+    <a href="mailto:mustafasalimerek@gmail.com">mustafasalimerek@gmail.com</a><br>
+    Write in English or Turkish. Replies usually take a day or two.</p>
+  </div>
+
+  <p class="foot">Ownio is made by Mustafa Salim Erek (Erek Studio), Türkiye.</p>
+</main>
+</body>
+</html>

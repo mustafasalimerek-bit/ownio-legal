@@ -1,0 +1,56 @@
+:root {
+  --bg: #12263A;
+  --sheet: #17304A;
+  --paper: #F7F5F1;
+  --ink: #EDF1F7;
+  --muted: #9AA7BA;
+  --body: #C7D0DC;
+  --accent: #E8A33D;
+  --line: #25364F;
+}
+* { box-sizing: border-box }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Helvetica Neue", Arial, system-ui, sans-serif;
+  line-height: 1.62;
+}
+main { max-width: 720px; margin: 0 auto; padding: 60px 24px 96px }
+
+/* The app icon's own geometry, inline. An earlier CSS-only version drew the
+   roof with a clip-path on a pseudo-element and rendered as a nub. */
+.mark { display: block; width: 46px; height: 46px; margin-bottom: 26px }
+
+h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 600; letter-spacing: -0.5px; font-size: 34px; margin: 0 0 4px;
+}
+.sub {
+  color: var(--muted); margin: 0 0 36px; letter-spacing: 3px;
+  font-size: 12px; text-transform: uppercase;
+}
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 600; font-size: 20px; margin: 34px 0 8px; letter-spacing: -0.2px;
+}
+p, li { color: var(--body) }
+li { margin-bottom: 6px }
+strong { color: var(--ink) }
+a { color: var(--accent) }
+.card {
+  background: var(--sheet); border: 1px solid var(--line);
+  padding: 18px 22px; margin: 22px 0; border-radius: 10px;
+}
+.card.rule { border-left: 3px solid var(--accent) }
+nav { margin-bottom: 30px; font-size: 14px }
+nav a { margin-right: 18px; text-decoration: none }
+nav a:hover { text-decoration: underline }
+.foot {
+  color: var(--muted); font-size: 13px;
+  border-top: 1px solid var(--line); margin-top: 44px; padding-top: 14px;
+}
+table { width: 100%; border-collapse: collapse; margin: 18px 0; font-size: 15px }
+th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top }
+th { color: var(--ink); font-size: 13px; text-transform: uppercase; letter-spacing: 1px }
+td { color: var(--body) }
