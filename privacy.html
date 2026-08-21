@@ -22,7 +22,7 @@
   <nav><a href="index.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
 
   <h1>Privacy Policy</h1>
-  <p class="sub">Ownio · last updated 20 August 2026</p>
+  <p class="sub">Ownio · last updated 21 August 2026</p>
 
   <p>Ownio is a record of what you own, kept for the day you have to prove it.
   That record is unusually personal — it is a list of your possessions and what
@@ -53,7 +53,7 @@
   which is the trade Ownio makes deliberately.</p>
 
   <h2>What leaves your phone, and when</h2>
-  <p>Four things, each for one purpose.</p>
+  <p>Five things, each for one purpose.</p>
 
   <table>
     <tr><th>What</th><th>When</th><th>Why</th></tr>
@@ -80,8 +80,9 @@
       value created on your device; on Android a value derived from the Android
       ID by one-way hashing, so the original never leaves the phone.</td>
       <td>Alongside the attestation.</td>
-      <td>To count your scans against the fair-use limit and to remember that
-      you are a subscriber across app updates. It is a random string, not a name,
+      <td>To count your scans against the fair-use limit, to remember that
+      you are a subscriber across app updates, and to hold the balance of any
+      photographs you have bought. It is a random string, not a name,
       and cannot be traced back to you.</td>
     </tr>
     <tr>
@@ -90,6 +91,15 @@
       <td>Alongside the attestation, if you subscribe.</td>
       <td>So the subscription can be verified with Apple or Google directly.
       Ownio never simply trusts the app's word that you have paid.</td>
+    </tr>
+    <tr>
+      <td><strong>Your purchase receipt</strong> for a photograph pack, and the
+      store's transaction identifier for it.</td>
+      <td>Only when you buy additional photographs.</td>
+      <td>So the purchase can be verified with Apple or Google, and so the same
+      purchase cannot be credited twice. Unlike a subscription, the store does
+      not remember a one-off purchase for us or tell us what you have spent, so
+      the balance has to be kept on our side.</td>
     </tr>
   </table>
 
@@ -103,11 +113,24 @@
   same form, and nothing about a hand-entered item leaves the phone.</p>
 
   <h2>What we keep on our server</h2>
-  <p>Counters, and nothing else. How many scans an installation has made this day
-  and this month, and whether its subscription checked out — stored against the
-  anonymous identifier above, on a short expiry. No photographs, no item names,
-  no values, no inventory, and no request content of any kind is written to
-  storage or to our logs.</p>
+  <p>Counters and a photograph balance, stored against the anonymous identifier
+  above. No photographs, no item names, no values, no inventory, and no request
+  content of any kind is written to storage or to our logs.</p>
+  <ul>
+    <li><strong>Counters</strong> — how many scans an installation has made this
+      day and this month, and whether its subscription checked out. These sit on
+      a short expiry.</li>
+    <li><strong>Your photograph balance</strong> — how many photographs remain in
+      the current subscription period, and how many you have bought and not yet
+      spent. <strong>The purchased half is kept until you spend it and does not
+      expire</strong>, because that is exactly what you paid for: photographs
+      that outlive the week. It is a number, not a history — we do not keep a
+      record of which scans it was spent on.</li>
+    <li><strong>The transaction identifier</strong> of each photograph pack you
+      buy, kept so the same purchase can never be credited twice. It is the
+      store's reference for the sale, not a payment method; Ownio never sees your
+      card, and Apple and Google do not give it to us.</li>
+  </ul>
 
   <h2>What Ownio does not do</h2>
   <ul>
@@ -141,6 +164,12 @@
   from the device. To have the anonymous counters attached to your installation
   cleared as well, write to the address below with the request; we can delete
   them, though they expire on their own within about a month.</p>
+  <p>One warning, because it is your money rather than your data: any
+  photographs you have bought and not yet spent are held against that same
+  anonymous identifier, and erasing it erases them. Apple and Google do not
+  restore a one-off purchase, so we could not give them back. If you ask us to
+  clear your installation we will tell you what the balance is first, and only
+  proceed once you confirm.</p>
 
   <h2>Changes</h2>
   <p>If this policy changes in a way that affects what leaves your phone, the
