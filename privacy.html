@@ -152,8 +152,12 @@
     <li>No tracking across apps or websites, and no App Tracking Transparency
       prompt. The analytics library ships in the variant that has the
       advertising identifier removed, so there is nothing to ask for.</li>
-    <li>No location permission of any kind. The country used for pricing comes
-      from your language setting, not from where you are.</li>
+    <li>No location permission of any kind, and no access to your device's
+      location. The country used for pricing comes from your language setting,
+      not from where you are. Analytics requests, like any internet request,
+      carry an IP address, from which Google can infer an approximate region
+      for its country-level reporting; that is inference by the recipient, not
+      a location this app reads or sends.</li>
     <li>No access to contacts, calendar, microphone, or your photo library
       beyond the individual images you choose to import.</li>
     <li>No selling or sharing of personal information. There is nothing to sell.</li>
