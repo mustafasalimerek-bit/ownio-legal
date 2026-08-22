@@ -22,7 +22,7 @@
   <nav><a href="index.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
 
   <h1>Privacy Policy</h1>
-  <p class="sub">Ownio · last updated 21 August 2026</p>
+  <p class="sub">Ownio · last updated 23 August 2026</p>
 
   <p>Ownio is a record of what you own, kept for the day you have to prove it.
   That record is unusually personal — it is a list of your possessions and what
@@ -53,7 +53,7 @@
   which is the trade Ownio makes deliberately.</p>
 
   <h2>What leaves your phone, and when</h2>
-  <p>Five things, each for one purpose.</p>
+  <p>Six things, each for one purpose.</p>
 
   <table>
     <tr><th>What</th><th>When</th><th>Why</th></tr>
@@ -91,6 +91,16 @@
       <td>Alongside the attestation, if you subscribe.</td>
       <td>So the subscription can be verified with Apple or Google directly.
       Ownio never simply trusts the app's word that you have paid.</td>
+    </tr>
+    <tr>
+      <td><strong>Which screens you open</strong>, as counts. Nine named events
+      such as "a scan started" or "the paywall was shown", and nothing else:
+      no item, no value, no room name, no photograph, and no text you typed.</td>
+      <td>As you use the app.</td>
+      <td>So we can see which parts are used and which are ignored, and improve
+      the ones that matter. This goes to Google Firebase Analytics. It carries
+      no advertising identifier, so there is no cross-app tracking and no App
+      Tracking Transparency prompt.</td>
     </tr>
     <tr>
       <td><strong>Your purchase receipt</strong> for a photograph pack, and the
@@ -135,9 +145,13 @@
   <h2>What Ownio does not do</h2>
   <ul>
     <li>No advertising, and no advertising SDK.</li>
-    <li>No analytics or attribution SDK. Ownio does not measure how you use it.</li>
+    <li>No attribution SDK, and no advertising identifier. Ownio uses Firebase
+      Analytics to count which screens are used, from a fixed list of nine
+      events; it cannot record what you own, because there is no way in the app
+      to attach that to an event.</li>
     <li>No tracking across apps or websites, and no App Tracking Transparency
-      prompt, because there is nothing to ask for.</li>
+      prompt. The analytics library ships in the variant that has the
+      advertising identifier removed, so there is nothing to ask for.</li>
     <li>No location permission of any kind. The country used for pricing comes
       from your language setting, not from where you are.</li>
     <li>No access to contacts, calendar, microphone, or your photo library
