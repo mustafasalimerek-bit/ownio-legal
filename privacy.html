@@ -207,16 +207,26 @@
   photograph and the cut-out are not sent to Ownio's server or to an AI provider
   for it. On iPhone it uses Apple's Vision framework, which is part of iOS (17 and
   later), and nothing is sent anywhere. On Android it uses Google's ML Kit subject
-  segmentation, which runs through Google Play services; Google Play may download
-  its model when the app is installed. Like other ML Kit features, it sends Google
-  information about how the feature itself runs — not your photograph: device
-  information (such as manufacturer, model and Android version), the app's name
-  and version, device and per-installation identifiers, performance metrics, the
-  image format and size, and error codes. Google uses this for diagnostics and
-  usage analytics, says it encrypts it in transit and does not pass it to third
-  parties. It is Google's collection under Google's privacy policy, separate from
-  Ownio's own analytics, so the <strong>Share usage analytics</strong> switch does
-  not change it.</p>
+  segmentation, which runs through Google Play services; Google Play services
+  downloads its model the first time Ownio asks for it, not when the app is
+  installed. Like other ML Kit features, it sends Google information about how the
+  feature itself runs — not your photograph: device information (such as
+  manufacturer, model and Android version), the app's name and version, device and
+  per-installation identifiers, performance metrics, the image format and size,
+  and error codes. Google uses this for diagnostics and usage analytics, says it
+  encrypts it in transit and does not pass it to third parties. It is Google's
+  collection under Google's privacy policy, separate from Ownio's own analytics,
+  so the <strong>Share usage analytics</strong> switch does not change it.</p>
+  <p>In the EU and EEA, the UK and Switzerland — and on a phone whose region
+  setting does not say where it is — Ownio asks on Android before the first piece
+  is lifted: <strong>Lift them</strong> or <strong>Keep photos as they are</strong>.
+  Until you choose <strong>Lift them</strong>, Ownio does not run the cut-out, so it
+  sends Google none of the information above and no model is downloaded; your
+  pieces keep their photographs, as they do on an iPhone before iOS 17. You can
+  change your answer at any time in <strong>Settings → Lift pieces off their
+  photos</strong>; cut-outs already made stay on your phone. Elsewhere, pieces are
+  lifted without asking. Ownio reads the region from your phone's region setting,
+  never from its location.</p>
 
   <h2>What we keep on our server</h2>
   <p>Counters and a photograph balance, stored against your subscription's
