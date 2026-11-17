@@ -51,6 +51,9 @@
     <li>From version 1.1.0, your closet: each piece's details (type, colours,
       pattern, fabric, how dressy, seasons, size, how often you wore it), the
       outfits you save, and the shop link a piece was added from.</li>
+    <li>From version 1.2.0, each piece's cut-out (the piece lifted off its
+      photograph's background), the looks you plan for each day of the week, and
+      which of them you wore.</li>
     <li>Your trips: packing lists, bag descriptions, bag-tag numbers, the
       photographs of your bags, and — if a bag goes missing — the airline's file
       reference and the name and contact details you type for the claim pack.
@@ -197,6 +200,23 @@
   photograph. The link is not sent to Ownio's server. The shop sees an ordinary
   request from your phone, as it would if you opened the page yourself, under
   its own privacy policy. The link is kept with the piece on your phone.</p>
+
+  <h2>Lifting a piece off its photograph</h2>
+  <p>From version 1.2.0, Ownio cuts each clothing photograph out of its
+  background, so the piece sits on a clean card. This happens on your phone: the
+  photograph and the cut-out are not sent to Ownio's server or to an AI provider
+  for it. On iPhone it uses Apple's Vision framework, which is part of iOS (17 and
+  later), and nothing is sent anywhere. On Android it uses Google's ML Kit subject
+  segmentation, which runs through Google Play services; Google Play may download
+  its model when the app is installed. Like every ML Kit feature, it sends Google
+  information about how the feature itself runs — not your photograph: device
+  information (such as manufacturer, model and Android version), the app's name
+  and version, device and per-installation identifiers, performance metrics, the
+  image format and size, and error codes. Google uses this for diagnostics and
+  usage analytics, says it encrypts it in transit and does not pass it to third
+  parties. It is Google's collection under Google's privacy policy, separate from
+  Ownio's own analytics, so the <strong>Share usage analytics</strong> switch does
+  not change it.</p>
 
   <h2>What we keep on our server</h2>
   <p>Counters and a photograph balance, stored against your subscription's
