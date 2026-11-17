@@ -22,7 +22,7 @@
   <nav><a href="index.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
 
   <h1>Privacy Policy</h1>
-  <p class="sub">Ownio · last updated 11 November 2026</p>
+  <p class="sub">Ownio · last updated 17 November 2026</p>
 
   <p>Ownio is a record of what you own, kept for the day you have to prove it.
   That record is unusually personal — it is a list of your possessions and what
@@ -97,7 +97,8 @@
       <td>Alongside the attestation.</td>
       <td>To count your scans against the fair-use limit, to remember that
       you are a subscriber across app updates, and — when you have no
-      subscription — to hold the balance of any photographs you have bought. It
+      subscription — to hold the balance of any photographs you have bought and
+      to count the closet's free tags and outfit ideas (from version 1.2.0). It
       is a random string, not a name, and cannot be traced back to you. On iOS it
       is kept in the device keychain, which survives deleting the app, so a
       reinstall keeps your balance.</td>
@@ -109,9 +110,11 @@
       <td>So the subscription can be verified with Apple or Google directly.
       Ownio never simply trusts the app's word that you have paid. From Apple's
       answer we keep the subscription's own identifier, when the current period
-      ends and whether it will renew: every device on the same subscription then
-      shares one weekly allowance and one balance of bought photographs, and a
-      renewal is noticed without waiting for the app.</td>
+      ends, whether it will renew, which plan it is and when it was first bought:
+      every device on the same subscription then shares one allowance and one
+      balance of bought photographs, the yearly and monthly plans' 30-day
+      allowance periods are counted from that first purchase, and a renewal is
+      noticed without waiting for the app.</td>
     </tr>
     <tr>
       <td><strong>A photograph of a closet piece</strong> (from version 1.1.0),
@@ -207,8 +210,9 @@
       These sit on a short expiry (a day or two at most).</li>
     <li><strong>Closet allowances</strong> (from version 1.1.0) — how many closet
       tags and outfit requests have been used in the current period, so the
-      subscription's fair-use limits can be applied. Counts only: no piece, no
-      description, no outfit.</li>
+      plan's limits can be applied; from version 1.2.0 also without a
+      subscription, against the anonymous installation identifier, for the free
+      tags and outfit ideas. Counts only: no piece, no description, no outfit.</li>
     <li><strong>Your subscription's status</strong> — its identifier, when the
       current period ends and whether it will renew, as Apple last reported
       them. Kept while you are a subscriber so every device on the subscription
@@ -217,7 +221,7 @@
       the current subscription period, and how many you have bought and not yet
       spent. <strong>The purchased half is kept until you spend it and does not
       expire</strong>, because that is exactly what you paid for: photographs
-      that outlive the week. It is a count per purchase, not a history — we do not
+      that outlive the allowance period. It is a count per purchase, not a history — we do not
       keep a record of which scans it was spent on.</li>
     <li><strong>The transaction identifier</strong> of each photograph pack you
       buy, kept so the same purchase can never be credited twice. It is the
